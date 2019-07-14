@@ -15,7 +15,7 @@ public class CleanerPilotTests {
 
         pilot.navigate(Arrays.asList(Direction.NORTH, Direction.EAST));
 
-        verify(mockCleaner).moveNorth();
-        verify(mockCleaner).moveEast();
+        verify(mockCleaner).move(Direction.NORTH);
+        verify(mockCleaner).move(Direction.EAST);
     }
 }
