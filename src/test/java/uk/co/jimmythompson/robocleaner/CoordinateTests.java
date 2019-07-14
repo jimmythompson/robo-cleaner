@@ -21,7 +21,7 @@ public class CoordinateTests {
     @Test
     public void translateShouldApplyTranslations() {
         Coordinate coordinate = new Coordinate(0, 1);
-        Translation translation = new Translation(2, -1);
+        Translation translation = Translation.of(2, -1);
         Coordinate expectedResult = new Coordinate(2, 0);
 
         Assert.assertEquals(expectedResult, coordinate.translate(translation));
