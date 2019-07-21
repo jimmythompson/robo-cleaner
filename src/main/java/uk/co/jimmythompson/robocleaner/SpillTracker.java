@@ -5,6 +5,7 @@ import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
+import java.util.stream.Collectors;
 
 public class SpillTracker implements Observer {
 
@@ -18,7 +19,7 @@ public class SpillTracker implements Observer {
         return oilPatches;
     }
 
-    public void track(Cleaner cleaner) {
+    public void follow(Cleaner cleaner) {
         cleaner.addObserver(this);
     }
 
@@ -31,5 +32,16 @@ public class SpillTracker implements Observer {
                 oilPatch.markAsCleaned();
             }
         }
+    }
+
+    public SpillStatus getStatus() {
+        final int totalPatches = this.oilPatches.size();
+        final int cleanedPatches =
+                (int) this.oilPatches
+                        .stream()
+                        .filter(OilPatch::hasBeenCleaned)
+                        .count();
+
+        return new SpillStatus(totalPatches, cleanedPatches);
     }
 }
