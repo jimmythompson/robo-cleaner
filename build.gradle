@@ -1,5 +1,5 @@
 plugins {
-	id 'org.springframework.boot' version '2.1.6.RELEASE'
+	id 'org.springframework.boot' version '2.1.8.RELEASE'
 	id 'java'
 }
 
@@ -14,7 +14,8 @@ repositories {
 }
 
 dependencies {
-	implementation 'org.springframework.boot:spring-boot-starter'
+	compile 'javax.ws.rs:javax.ws.rs-api:2.0'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.mockito:mockito-core:3.0.0'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
