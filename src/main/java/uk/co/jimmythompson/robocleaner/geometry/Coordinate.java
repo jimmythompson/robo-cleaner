@@ -1,4 +1,6 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.geometry;
+
+import uk.co.jimmythompson.robocleaner.Translation;
 
 import java.util.Objects;
 

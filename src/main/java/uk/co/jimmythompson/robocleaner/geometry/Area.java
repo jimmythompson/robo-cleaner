@@ -1,4 +1,4 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.geometry;
 
 public class Area {
     private static Coordinate bottomLeft = new Coordinate(0, 0);

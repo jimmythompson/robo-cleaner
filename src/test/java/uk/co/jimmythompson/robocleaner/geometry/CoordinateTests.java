@@ -1,7 +1,9 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.geometry;
 
 import org.junit.Assert;
 import org.junit.Test;
+import uk.co.jimmythompson.robocleaner.Translation;
+import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
 
 public class CoordinateTests {
     @Test

@@ -1,5 +1,7 @@
 package uk.co.jimmythompson.robocleaner;
 
+import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
+
 public class Cleaner {
     private Coordinate location;
 
@@ -15,6 +17,9 @@ public class Cleaner {
         return this.location;
     }
 
+    public Coordinate projectMovement(Direction direction) {
+        return this.location.translate(direction.getTranslation());
+    }
 
     public Coordinate move(Direction direction) {
         Coordinate newLocation = this.location.translate(direction.getTranslation());

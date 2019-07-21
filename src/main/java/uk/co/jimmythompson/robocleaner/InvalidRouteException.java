@@ -1,4 +1,4 @@
 package uk.co.jimmythompson.robocleaner;
 
-public class InvalidRouteException {
+public class InvalidRouteException extends IllegalArgumentException {
 }
