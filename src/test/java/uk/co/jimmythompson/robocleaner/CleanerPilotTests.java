@@ -1,6 +1,5 @@
 package uk.co.jimmythompson.robocleaner;
 
-import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 import uk.co.jimmythompson.robocleaner.geometry.Area;

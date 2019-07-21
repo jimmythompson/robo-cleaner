@@ -5,7 +5,6 @@ import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
 import java.util.List;
 import java.util.Observable;
 import java.util.Observer;
-import java.util.stream.Collectors;
 
 public class SpillTracker implements Observer {
 

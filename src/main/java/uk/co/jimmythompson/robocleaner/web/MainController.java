@@ -1,6 +1,9 @@
 package uk.co.jimmythompson.robocleaner.web;
 
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import uk.co.jimmythompson.robocleaner.Cleaner;
 import uk.co.jimmythompson.robocleaner.CleanerPilot;
 import uk.co.jimmythompson.robocleaner.SpillTracker;

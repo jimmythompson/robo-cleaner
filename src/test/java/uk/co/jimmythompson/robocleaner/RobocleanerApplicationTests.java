@@ -16,7 +16,6 @@ import uk.co.jimmythompson.robocleaner.web.SpillTrackingResult;
 import javax.ws.rs.core.MediaType;
 
 import static java.util.Arrays.asList;
-import static org.hamcrest.CoreMatchers.equalTo;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 

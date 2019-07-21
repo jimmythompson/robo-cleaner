@@ -1,14 +1,6 @@
 package uk.co.jimmythompson.robocleaner.web;
 
-import uk.co.jimmythompson.robocleaner.Direction;
-import uk.co.jimmythompson.robocleaner.OilPatch;
-import uk.co.jimmythompson.robocleaner.RouteParser;
-import uk.co.jimmythompson.robocleaner.geometry.Area;
-import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
-
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 public class SpillTrackingRequest {
     private List<Integer> areaSize;

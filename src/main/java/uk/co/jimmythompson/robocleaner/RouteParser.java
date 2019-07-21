@@ -1,7 +1,5 @@
 package uk.co.jimmythompson.robocleaner;
 
-import com.sun.jmx.remote.internal.ArrayQueue;
-
 import java.util.ArrayList;
 import java.util.List;
 
