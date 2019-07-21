@@ -15,7 +15,10 @@ public class Cleaner {
         return this.location;
     }
 
-    public void move(Direction direction) {
-        this.location = this.location.translate(direction.getTranslation());
+
+    public Coordinate move(Direction direction) {
+        Coordinate newLocation = this.location.translate(direction.getTranslation());
+        this.location = newLocation;
+        return newLocation;
     }
 }

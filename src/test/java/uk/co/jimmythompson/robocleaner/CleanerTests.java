@@ -17,9 +17,9 @@ public class CleanerTests {
         Coordinate expectedLocation = new Coordinate(1, 2);
         Cleaner cleaner = Cleaner.deploy(startingLocation);
 
-        cleaner.move(Direction.NORTH);
+        Coordinate newLocation = cleaner.move(Direction.NORTH);
 
-        Assert.assertEquals(expectedLocation, cleaner.getLocation());
+        Assert.assertEquals(expectedLocation, newLocation);
     }
 
     @Test
@@ -28,9 +28,9 @@ public class CleanerTests {
         Coordinate expectedLocation = new Coordinate(2, 1);
         Cleaner cleaner = Cleaner.deploy(startingLocation);
 
-        cleaner.move(Direction.EAST);
+        Coordinate newLocation = cleaner.move(Direction.EAST);
 
-        Assert.assertEquals(expectedLocation, cleaner.getLocation());
+        Assert.assertEquals(expectedLocation, newLocation);
     }
 
     @Test
@@ -39,9 +39,9 @@ public class CleanerTests {
         Coordinate expectedLocation = new Coordinate(1, 0);
         Cleaner cleaner = Cleaner.deploy(startingLocation);
 
-        cleaner.move(Direction.SOUTH);
+        Coordinate newLocation = cleaner.move(Direction.SOUTH);
 
-        Assert.assertEquals(expectedLocation, cleaner.getLocation());
+        Assert.assertEquals(expectedLocation, newLocation);
     }
 
     @Test
@@ -50,8 +50,8 @@ public class CleanerTests {
         Coordinate expectedLocation = new Coordinate(0, 1);
         Cleaner cleaner = Cleaner.deploy(startingLocation);
 
-        cleaner.move(Direction.WEST);
+        Coordinate newLocation = cleaner.move(Direction.WEST);
 
-        Assert.assertEquals(expectedLocation, cleaner.getLocation());
+        Assert.assertEquals(expectedLocation, newLocation);
     }
 }
