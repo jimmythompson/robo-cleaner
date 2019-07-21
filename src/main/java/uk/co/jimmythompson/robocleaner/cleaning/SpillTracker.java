@@ -1,4 +1,4 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.cleaning;
 
 import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
 

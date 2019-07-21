@@ -1,4 +1,4 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.cleaning;
 
 import org.junit.Assert;
 import org.junit.Test;

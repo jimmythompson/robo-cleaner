@@ -1,7 +1,8 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.web;
 
 import org.junit.Assert;
 import org.junit.Test;
+import uk.co.jimmythompson.robocleaner.geometry.Direction;
 
 import java.util.Arrays;
 import java.util.Collections;

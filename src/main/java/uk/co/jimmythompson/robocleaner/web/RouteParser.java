@@ -1,4 +1,7 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.web;
+
+import uk.co.jimmythompson.robocleaner.InvalidDirectionException;
+import uk.co.jimmythompson.robocleaner.geometry.Direction;
 
 import java.util.ArrayList;
 import java.util.List;

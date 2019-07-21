@@ -1,7 +1,9 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.cleaning;
 
+import uk.co.jimmythompson.robocleaner.InvalidRouteException;
 import uk.co.jimmythompson.robocleaner.geometry.Area;
 import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
+import uk.co.jimmythompson.robocleaner.geometry.Direction;
 
 public class CleanerPilot {
     private Area area;

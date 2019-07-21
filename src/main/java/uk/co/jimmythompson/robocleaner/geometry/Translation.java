@@ -1,4 +1,4 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.geometry;
 
 public class Translation {
     private int x;

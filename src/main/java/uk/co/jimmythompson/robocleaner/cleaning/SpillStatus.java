@@ -1,4 +1,4 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.cleaning;
 
 public class SpillStatus {
     private final int totalPatches;

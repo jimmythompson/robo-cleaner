@@ -1,9 +1,11 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.cleaning;
 
 import org.junit.Test;
 import org.mockito.Mockito;
+import uk.co.jimmythompson.robocleaner.InvalidRouteException;
 import uk.co.jimmythompson.robocleaner.geometry.Area;
 import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
+import uk.co.jimmythompson.robocleaner.geometry.Direction;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;

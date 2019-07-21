@@ -1,4 +1,4 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.geometry;
 
 public enum Direction {
     NORTH(Translation.of(0, 1)),

@@ -2,7 +2,6 @@ package uk.co.jimmythompson.robocleaner.geometry;
 
 import org.junit.Assert;
 import org.junit.Test;
-import uk.co.jimmythompson.robocleaner.Translation;
 
 public class CoordinateTests {
     @Test

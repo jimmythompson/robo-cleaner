@@ -1,8 +1,9 @@
-package uk.co.jimmythompson.robocleaner;
+package uk.co.jimmythompson.robocleaner.cleaning;
 
 import org.junit.Assert;
 import org.junit.Test;
 import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
+import uk.co.jimmythompson.robocleaner.geometry.Direction;
 
 import static java.util.Arrays.asList;
 import static java.util.Collections.singletonList;
