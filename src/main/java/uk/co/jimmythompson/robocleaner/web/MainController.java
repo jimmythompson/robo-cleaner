@@ -5,14 +5,12 @@ import uk.co.jimmythompson.robocleaner.Cleaner;
 import uk.co.jimmythompson.robocleaner.CleanerPilot;
 import uk.co.jimmythompson.robocleaner.SpillTracker;
 
-import static java.util.Arrays.asList;
-
 @RestController
 public class MainController {
 
     @RequestMapping(path = "/", method = RequestMethod.POST)
     SpillTrackingResult trackSpill(@RequestBody SpillTrackingRequest request) {
-        SpillTrackingRequestMapper mapper = new SpillTrackingRequestMapper(request);
+        SpillTrackingRequestParser mapper = new SpillTrackingRequestParser(request);
         Cleaner cleaner = Cleaner.deploy(mapper.getStartingPosition());
         SpillTracker spillTracker = new SpillTracker(mapper.getOilPatches());
 

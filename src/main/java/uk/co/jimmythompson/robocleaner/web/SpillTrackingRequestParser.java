@@ -9,14 +9,14 @@ import uk.co.jimmythompson.robocleaner.geometry.Coordinate;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class SpillTrackingRequestMapper {
+public class SpillTrackingRequestParser {
     private final SpillTrackingRequest request;
 
     private static Coordinate parseCoordinate(List<Integer> unparsed) {
         return new Coordinate(unparsed.get(0), unparsed.get(1));
     }
 
-    public SpillTrackingRequestMapper(SpillTrackingRequest request) {
+    public SpillTrackingRequestParser(SpillTrackingRequest request) {
         this.request = request;
     }
 
@@ -31,7 +31,7 @@ public class SpillTrackingRequestMapper {
 
     public List<OilPatch> getOilPatches() {
         return this.request.getOilPatches().stream()
-                .map(SpillTrackingRequestMapper::parseCoordinate)
+                .map(SpillTrackingRequestParser::parseCoordinate)
                 .map(OilPatch::new)
                 .collect(Collectors.toList());
     }
